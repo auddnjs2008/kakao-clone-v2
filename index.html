@@ -7,13 +7,14 @@
       src="https://kit.fontawesome.com/0f0e16d051.js"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="stylesheet" href="styles.css" />
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column"></div>
-      <span class="status-bar__clock">13:54</span>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
       <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
@@ -43,17 +44,24 @@
       <ul class="chats_list">
         <li class="chats_chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="avatar.jpg" />
-              <div class="chat__content">
-                <span class="chat__username">
-                  Lynn
-                </span>
-                <span class="chat__preview">Going home</span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img src="avatar.jpg" class="m-avator friend__avator" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Lynn
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going Home
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Ysterday</span>
+
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  March 8
+                </span>
+              </div>
             </div>
           </a>
         </li>
@@ -61,7 +69,7 @@
     </main>
 
     <nav class="nav">
-      <ul class="nav_list">
+      <ul class="nav__list">
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
             <i class="far fa-user"></i>
@@ -69,6 +77,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
@@ -84,5 +93,9 @@
         </li>
       </ul>
     </nav>
+
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!!</span>
+    </div>
   </body>
 </html>

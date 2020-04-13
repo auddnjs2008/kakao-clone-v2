@@ -7,13 +7,14 @@
       src="https://kit.fontawesome.com/0f0e16d051.js"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="stylesheet" href="styles.css" />
     <title>Friends | Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column"></div>
-      <span class="status-bar__clock">13:54</span>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
       <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
@@ -40,9 +41,9 @@
 
     <main class="friends">
       <header class="friends__header">
-        <div class="friends__friend friend friend--lg">
+        <div class="friends__friend friend">
           <div class="friend__column">
-            <img src="avatar.jpg" class="g-avatar friend__avator" />
+            <img src="avatar.jpg" class="g-avator friend__avator" />
             <div class="friend__content">
               <span class="friend__name">
                 Nicolas Serrano
@@ -58,8 +59,8 @@
       <div class="friends__plus">
         <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
-          <div class="div__column">
-            <img src="avatar.jpg" class="g-avatar friend__avator" />
+          <div class="friend__column">
+            <img src="avatar.jpg" class="friend__avator" />
             <div class="friend__content">
               <span class="friend__name">
                 Plus Friend
@@ -73,10 +74,13 @@
         <h5 class="friends__title">Friends 14</h5>
         <li class="friends__friend friend">
           <div class="friend__column">
-            <img src="avatar.jpg" class="g-avatar friend__avator" />
+            <img src="avatar.jpg" class="friend__avator" />
             <div class="friend__content">
               <span class="friend__name">
                 Nicolas Serrano
+              </span>
+              <span class="friend__status">
+                nomadcoders.co
               </span>
             </div>
           </div>
@@ -85,8 +89,8 @@
             <div class="friend__now-listening">
               <span>
                 FTISLAND(FT NomadCoders)
+                <i class="fas fa-play"></i>
               </span>
-              <i class="fas fa-play"></i>
             </div>
           </div>
         </li>
@@ -94,7 +98,7 @@
     </main>
 
     <nav class="nav">
-      <ul class="nav_list">
+      <ul class="nav__list">
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
             <i class="fas fa-user"></i>
@@ -117,5 +121,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!!</span>
+    </div>
   </body>
 </html>
